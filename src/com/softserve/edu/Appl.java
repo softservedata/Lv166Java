@@ -6,7 +6,7 @@ public final class Appl {
     }
 
     public static void main(final String[] args) {
-        System.out.println("Hello_World!");
+        System.out.println("Hello VI!");
     }
 
 }
