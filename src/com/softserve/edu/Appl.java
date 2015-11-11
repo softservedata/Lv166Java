@@ -7,6 +7,8 @@ public final class Appl {
 
     public static void main(final String[] args) {
         System.out.println("Hello VI!");
+		System.out.println("My new line");
+		
     }
 
 }
