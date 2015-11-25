@@ -5,18 +5,22 @@ import javax.persistence.*;
 @Entity
 @Table(name = "resource_types")
 public class ResourceType {
-	
+
 	@Id
 	@Column(name = "resource_type_id")
 	@GeneratedValue
 	private Integer typeId;
-	
-    @Column(name = "type_name", nullable = false)
-    private String typeName;
-    
-    public ResourceType() {
-    	
-    }
+
+	@Column(name = "type_name", nullable = false)
+	private String typeName;
+
+	public ResourceType() {
+
+	}
+
+	public ResourceType(String typeName) {
+		this.typeName = typeName;
+	}
 
 	public Integer getTypeId() {
 		return typeId;
@@ -32,6 +36,6 @@ public class ResourceType {
 
 	public void setTypeName(String typeName) {
 		this.typeName = typeName;
-	} 
-    
+	}
+
 }

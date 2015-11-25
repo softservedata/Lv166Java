@@ -13,7 +13,7 @@
 
    <!-- Assume students is the database name -->
    <property name="hibernate.connection.url">
-      jdbc:mysql://localhost/lv166
+      jdbc:mysql://localhost/softserve_project
    </property>
    <property name="hibernate.connection.username">root</property>
    <property name="hibernate.connection.password">root</property>
@@ -24,7 +24,7 @@
    	<!-- mapping files -->
 	<mapping class="com.softserve.edu.core.dto.User"/>
 	<mapping class="com.softserve.edu.core.dto.Role"/> 
-	<mapping class="com.softserve.edu.core.dto.Adress"/> 
+	<mapping class="com.softserve.edu.core.dto.Address"/> 
 	<mapping class="com.softserve.edu.core.dto.PassportInfo"/> 
 	<mapping class="com.softserve.edu.core.dto.ResourceType"/>
 	<mapping class="com.softserve.edu.core.dto.Resource"/> 

@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "address")
-public class Adress {
+public class Address {
 
     @Id
     @Column(name = "address_id")
@@ -33,7 +33,7 @@ public class Adress {
     @Column(name = "flat_number")
     private Integer flatNumber;
     
-    public Adress() {
+    public Address() {
     	
     }
 
