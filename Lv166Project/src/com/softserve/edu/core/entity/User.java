@@ -1,4 +1,4 @@
-package com.softserve.edu.core.dto;
+package com.softserve.edu.core.entity;
 
 import javax.persistence.*;
 @Entity

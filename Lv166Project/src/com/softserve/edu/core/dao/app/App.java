@@ -1,7 +1,7 @@
 package com.softserve.edu.core.dao.app;
 
 import com.softserve.edu.core.dao.daofactory.DaoFactory;
-import com.softserve.edu.core.dto.ResourceType;
+import com.softserve.edu.core.entity.ResourceType;
 
 public class App {
 	public static void main(String[] args) {

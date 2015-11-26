@@ -1,7 +1,7 @@
 package com.softserve.edu.core.dao;
 
 import com.softserve.edu.core.dao.implementation.DaoOperationsImp;
-import com.softserve.edu.core.dto.StoreOfLineSizes;
+import com.softserve.edu.core.entity.StoreOfLineSizes;
 
 public class StoreOfLineSizesDao extends DaoOperationsImp<StoreOfLineSizes>{
 

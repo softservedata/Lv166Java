@@ -1,7 +1,7 @@
 package com.softserve.edu.core.dao;
 
 import com.softserve.edu.core.dao.implementation.DaoOperationsImp;
-import com.softserve.edu.core.dto.Owner;
+import com.softserve.edu.core.entity.Owner;
 
 public class OwnerDao extends DaoOperationsImp<Owner>{
 

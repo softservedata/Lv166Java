@@ -1,7 +1,7 @@
 package com.softserve.edu.core.dao;
 
 import com.softserve.edu.core.dao.implementation.DaoOperationsImp;
-import com.softserve.edu.core.dto.ResourceParameters;
+import com.softserve.edu.core.entity.ResourceParameters;
 
 public class ResourceParametersDao extends DaoOperationsImp<ResourceParameters>{
 

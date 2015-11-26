@@ -1,7 +1,7 @@
 package com.softserve.edu.core.dao;
 
 import com.softserve.edu.core.dao.implementation.DaoOperationsImp;
-import com.softserve.edu.core.dto.LineSize;
+import com.softserve.edu.core.entity.LineSize;
 
 public class LineSizeDao extends DaoOperationsImp<LineSize> {
 

@@ -1,7 +1,7 @@
 package com.softserve.edu.core.dao;
 
 import com.softserve.edu.core.dao.implementation.DaoOperationsImp;
-import com.softserve.edu.core.dto.DiscreteValue;
+import com.softserve.edu.core.entity.DiscreteValue;
 
 public class DiscreteValueDao extends DaoOperationsImp<DiscreteValue> {
 

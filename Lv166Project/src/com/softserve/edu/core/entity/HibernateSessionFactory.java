@@ -1,4 +1,4 @@
-package com.softserve.edu.core.dto;
+package com.softserve.edu.core.entity;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
