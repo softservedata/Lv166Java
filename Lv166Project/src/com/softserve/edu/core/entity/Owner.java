@@ -1,23 +1,22 @@
 package com.softserve.edu.core.entity;
 
-
 import javax.persistence.*;
 
 @Entity
 @Table(name = "owners")
 public class Owner {
-	
+
 	@Id
 	@Column(name = "owners_id")
 	@GeneratedValue
 	private Integer OwnerId;
 
-    @Column(name = "ownership_type", nullable = false)
-	@Enumerated(EnumType.STRING) 
+	@Column(name = "ownership_type", nullable = false)
+	@Enumerated(EnumType.STRING)
 	private OwnerType ownerType;
-	
+
 	public Owner() {
-		
+
 	}
 
 	public Integer getOwnerId() {
@@ -37,4 +36,6 @@ public class Owner {
 	}
 }
 
-enum OwnerType{UKRAINIAN_PEOPLE}
+enum OwnerType {
+	UKRAINIAN_PEOPLE
+}

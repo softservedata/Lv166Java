@@ -55,9 +55,9 @@ public final class DaoFactory {
 
 	}
 
-	public static DaoFactory get(){
-		if(daoFactory==null){
-			daoFactory=new DaoFactory();
+	public static DaoFactory get() {
+		if (daoFactory == null) {
+			daoFactory = new DaoFactory();
 		}
 		return daoFactory;
 	}
@@ -124,22 +124,6 @@ public final class DaoFactory {
 
 	public static DaoFactory getDaoFactory() {
 		return daoFactory;
-	} 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}
+
 }

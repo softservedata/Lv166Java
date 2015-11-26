@@ -5,28 +5,28 @@ import javax.persistence.*;
 @Entity
 @Table(name = "passport_data")
 public class PassportInfo {
-	
-    @Id
-    @Column(name = "passport_data_id")
-    @GeneratedValue
-    private Integer passportId;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="user_id", nullable = false)  
-    private User user;
+	@Id
+	@Column(name = "passport_data_id")
+	@GeneratedValue
+	private Integer passportId;
 
-    @Column(name = "seria", nullable = false)
-    private String seria;
-    
-    @Column(name = "number", nullable = false)
-    private Integer number;
-    
-    @Column(name = "published_by_data", nullable = false)
-    private String published_by_data;
-    
-    public PassportInfo() {
-    	
-    }
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "user_id", nullable = false)
+	private User user;
+
+	@Column(name = "seria", nullable = false)
+	private String seria;
+
+	@Column(name = "number", nullable = false)
+	private Integer number;
+
+	@Column(name = "published_by_data", nullable = false)
+	private String published_by_data;
+
+	public PassportInfo() {
+
+	}
 
 	public Integer getPassportId() {
 		return passportId;
@@ -67,5 +67,5 @@ public class PassportInfo {
 	public void setPublished_by_data(String published_by_data) {
 		this.published_by_data = published_by_data;
 	}
-    
+
 }

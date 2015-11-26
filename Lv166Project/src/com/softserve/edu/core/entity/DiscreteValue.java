@@ -5,22 +5,22 @@ import javax.persistence.*;
 @Entity
 @Table(name = "discrete_values")
 public class DiscreteValue {
-	
+
 	@Id
-    @Column(name = "discrete_values_id")
-    @GeneratedValue
-    private Integer discreteValueId;
+	@Column(name = "discrete_values_id")
+	@GeneratedValue
+	private Integer discreteValueId;
 
 	@ManyToOne
 	@JoinColumn(name = "resource_type_id", nullable = false)
 	private ResourceType resourceType;
-	
-    @Column(name = "description", nullable = false)
-    private String description;
-    
-    public DiscreteValue() {
-    	
-    }
+
+	@Column(name = "description", nullable = false)
+	private String description;
+
+	public DiscreteValue() {
+
+	}
 
 	public Integer getDiscreteValueId() {
 		return discreteValueId;
@@ -44,6 +44,6 @@ public class DiscreteValue {
 
 	public void setDescription(String description) {
 		this.description = description;
-	}   
+	}
 
 }

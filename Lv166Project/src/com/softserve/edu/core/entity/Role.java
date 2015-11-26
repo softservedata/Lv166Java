@@ -6,21 +6,21 @@ import javax.persistence.*;
 @Table(name = "roles")
 public class Role {
 
-    @Id
-    @Column(name = "role_id")
-    @GeneratedValue
-    private Integer roleId;
+	@Id
+	@Column(name = "role_id")
+	@GeneratedValue
+	private Integer roleId;
 
-    //!!! name should be ENUM
-    @Column(name = "name", nullable = false)
-	@Enumerated(EnumType.STRING) 
+	// !!! name should be ENUM
+	@Column(name = "name", nullable = false)
+	@Enumerated(EnumType.STRING)
 	private Name name;
-    
-    @Column(name = "description", nullable = false)
-    private String description;
 
-    public Role(){
-    }
+	@Column(name = "description", nullable = false)
+	private String description;
+
+	public Role() {
+	}
 
 	public Integer getRoleId() {
 		return roleId;
@@ -45,22 +45,20 @@ public class Role {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-    
+
 }
 
-enum Name{
-    USER("Користувач"),
-    REGISTRATOR("Реєстратор"),
-    ADMIN("Адміністратор");
+enum Name {
+	USER("Користувач"), REGISTRATOR("Реєстратор"), ADMIN("Адміністратор");
 
-    private final String text;
+	private final String text;
 
-    private Name(final String text) {
-        this.text = text;
-    }
+	private Name(final String text) {
+		this.text = text;
+	}
 
-    @Override
-    public String toString() {
-        return text;
-    }
+	@Override
+	public String toString() {
+		return text;
+	}
 }

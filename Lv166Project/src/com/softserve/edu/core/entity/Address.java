@@ -6,36 +6,36 @@ import javax.persistence.*;
 @Table(name = "address")
 public class Address {
 
-    @Id
-    @Column(name = "address_id")
-    @GeneratedValue
-    private Integer addressId;
-    
-    @ManyToOne
+	@Id
+	@Column(name = "address_id")
+	@GeneratedValue
+	private Integer addressId;
+
+	@ManyToOne
 	@JoinColumn(name = "user_id", nullable = false)
-	private User user; 
-    
-    @Column(name = "postcode", nullable = false)
-    private Integer postCode;
-    
-    @Column(name = "region", nullable = false)
-    private String region;
-    
-    @Column(name = "city", nullable = false)
-    private String city;
+	private User user;
 
-    @Column(name = "street", nullable = false)
-    private String street;
+	@Column(name = "postcode", nullable = false)
+	private Integer postCode;
 
-    @Column(name = "building_number", nullable = false)
-    private Integer buildingNumber;
+	@Column(name = "region", nullable = false)
+	private String region;
 
-    @Column(name = "flat_number")
-    private Integer flatNumber;
-    
-    public Address() {
-    	
-    }
+	@Column(name = "city", nullable = false)
+	private String city;
+
+	@Column(name = "street", nullable = false)
+	private String street;
+
+	@Column(name = "building_number", nullable = false)
+	private Integer buildingNumber;
+
+	@Column(name = "flat_number")
+	private Integer flatNumber;
+
+	public Address() {
+
+	}
 
 	public Integer getAddressId() {
 		return addressId;

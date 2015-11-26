@@ -68,7 +68,7 @@ public class DaoOperationsImp<T> implements IDaoOperations<T> {
 	public T findById(Long entityId) {
 
 		Session session = null;
-		T element=null;
+		T element = null;
 		try {
 
 			session = HibernateUtil.getSessionFactory().openSession();
@@ -112,12 +112,12 @@ public class DaoOperationsImp<T> implements IDaoOperations<T> {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<T> getAll() {
-		Session session=null;
-		List<T> elements=new ArrayList<T>();
-		
-		try{
-			session=HibernateUtil.getSessionFactory().openSession();
-			elements=session.createCriteria(elementClass).list();
+		Session session = null;
+		List<T> elements = new ArrayList<T>();
+
+		try {
+			session = HibernateUtil.getSessionFactory().openSession();
+			elements = session.createCriteria(elementClass).list();
 		} catch (HibernateException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
@@ -127,14 +127,14 @@ public class DaoOperationsImp<T> implements IDaoOperations<T> {
 				session.close();
 			}
 		}
-		
+
 		return elements;
 	}
 
 	@Override
 	public void deleteAll() {
-		List<T> elements=getAll();
-		for(T t : elements){
+		List<T> elements = getAll();
+		for (T t : elements) {
 			delete(t);
 		}
 

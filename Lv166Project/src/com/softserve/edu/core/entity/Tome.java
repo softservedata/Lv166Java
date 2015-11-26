@@ -1,12 +1,11 @@
 package com.softserve.edu.core.entity;
 
-
 import javax.persistence.*;
 
 @Entity
 @Table(name = "tomes")
 public class Tome {
-	
+
 	@Id
 	@Column(name = "tome_id")
 	@GeneratedValue
@@ -17,13 +16,13 @@ public class Tome {
 
 	@Column(name = "name", nullable = false)
 	private String name;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "registrator_id", nullable = false)
 	private User user;
 
 	public Tome() {
-		
+
 	}
 
 	public Integer getTome_id() {

@@ -48,8 +48,7 @@ public class HibernateSessionFactory {
 				try {
 					cfg.configure(CONFIG_FILE_LOCATION);
 					sessionFactory = cfg.buildSessionFactory(
-							new StandardServiceRegistryBuilder()
-								.applySettings(cfg.getProperties()).build());
+							new StandardServiceRegistryBuilder().applySettings(cfg.getProperties()).build());
 				} catch (Exception e) {
 					System.err.println("%%%% Error Creating SessionFactory %%%%");
 					e.printStackTrace();

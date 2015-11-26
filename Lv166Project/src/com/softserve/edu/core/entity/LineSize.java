@@ -6,12 +6,11 @@ import javax.persistence.*;
 @Table(name = "lines_size")
 public class LineSize {
 
-
 	@Id
 	@Column(name = "lines_size_id")
 	@GeneratedValue
 	private Integer linesSizeId;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "resource_type_id", nullable = false)
 	private ResourceType resourceType;
@@ -20,7 +19,7 @@ public class LineSize {
 	private String description;
 
 	public LineSize() {
-		
+
 	}
 
 	public Integer getLinesSizeId() {

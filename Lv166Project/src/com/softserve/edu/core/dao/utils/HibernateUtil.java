@@ -25,10 +25,9 @@ public final class HibernateUtil {
 
 	private HibernateUtil() {
 	}
-	
-	public static SessionFactory getSessionFactory(){
+
+	public static SessionFactory getSessionFactory() {
 		return sessionFactory;
-	} 
-	
+	}
 
 }

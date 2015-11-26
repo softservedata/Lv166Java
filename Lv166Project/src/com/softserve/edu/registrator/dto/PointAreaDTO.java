@@ -1,8 +1,8 @@
 package com.softserve.edu.registrator.dto;
 
 public class PointAreaDTO {
-	//private double latitude;
-	//private double longtitude;
+	// private double latitude;
+	// private double longtitude;
 	//
 	private int orderNumber;
 	private int latitudeDegrees;

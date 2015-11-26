@@ -18,9 +18,9 @@ public class ResourceParameters {
 	@ManyToOne
 	@JoinColumn(name = "parameter_id", nullable = false)
 	private LineSize lineSize;
-	
+
 	public ResourceParameters() {
-		
+
 	}
 
 	// add getters and setters

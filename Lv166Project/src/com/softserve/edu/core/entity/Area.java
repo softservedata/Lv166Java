@@ -14,18 +14,18 @@ public class Area {
 	@ManyToOne
 	@JoinColumn(name = "resource_id", nullable = false)
 	private Resource resource;
-	
+
 	@Column(name = "latitude", nullable = false)
 	private String latitude;
-	
+
 	@Column(name = "longitude", nullable = false)
 	private String longitude;
-	
+
 	@Column(name = "number_of_point", nullable = false)
 	private Integer numberOfPoint;
 
 	public Area() {
-		
+
 	}
 
 	public Integer getArea_id() {

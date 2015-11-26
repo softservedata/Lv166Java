@@ -1,12 +1,11 @@
 package com.softserve.edu.core.entity;
 
-
 import javax.persistence.*;
 
 @Entity
 @Table(name = "store_of_line_sizes")
 public class StoreOfLineSizes {
-	
+
 	@Id
 	@Column(name = "store_of_line_sizes_id")
 	@GeneratedValue
@@ -15,19 +14,19 @@ public class StoreOfLineSizes {
 	@ManyToOne
 	@JoinColumn(name = "resource_id", nullable = false)
 	private Resource resource;
-		
+
 	@Column(name = "minimal_value", nullable = false)
 	private Double minValue;
 
 	@Column(name = "maximal_value", nullable = false)
 	private Double maxValue;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "lines_size_id", nullable = false)
 	private LineSize lineSize;
-	
+
 	public StoreOfLineSizes() {
-		
+
 	}
 
 	public Integer getStoreOfLineSizesId() {

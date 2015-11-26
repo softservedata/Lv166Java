@@ -7,10 +7,6 @@ public class App {
 	public static void main(String[] args) {
 
 		DaoFactory.get().getResourceTypeDao().add(new ResourceType("klimat"));
-		
-	
-	
-	
-	
+
 	}
 }

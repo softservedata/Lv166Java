@@ -1,13 +1,11 @@
 package com.softserve.edu.core.entity;
 
-
 import javax.persistence.*;
 
 @Entity
 @Table(name = "store_of_discrete_values")
 public class StoreOfDiscreteValues {
-	
-	
+
 	@Id
 	@Column(name = "store_of_discrete_values_id")
 	@GeneratedValue
@@ -16,17 +14,16 @@ public class StoreOfDiscreteValues {
 	@ManyToOne
 	@JoinColumn(name = "resource_id", nullable = false)
 	private Resource resource;
-	
-	
+
 	@Column(name = "value", nullable = false)
 	private Double value;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "discrete_values_id", nullable = false)
-	private DiscreteValue discreteValue;	
+	private DiscreteValue discreteValue;
 
 	public StoreOfDiscreteValues() {
-		
+
 	}
 
 	public Integer getStoreOfDiscreteValuesId() {

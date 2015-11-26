@@ -1,46 +1,47 @@
 package com.softserve.edu.core.entity;
 
 import javax.persistence.*;
+
 @Entity
 @Table(name = "users")
 public class User {
-	
+
 	@Id
-    @Column(name = "user_id")
-    @GeneratedValue
-    private Integer userId;
-	
-	@Column(name = "login",unique = true, nullable = false)
-	
+	@Column(name = "user_id")
+	@GeneratedValue
+	private Integer userId;
+
+	@Column(name = "login", unique = true, nullable = false)
+
 	private String login;
 
 	@Column(name = "password", nullable = false)
 	private String password;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "role_id", nullable = false)
-	private Role role; 
-	
+	private Role role;
+
 	@Column(name = "first_name", nullable = false)
 	private String firstName;
-	
+
 	@Column(name = "last_name", nullable = false)
 	private String lastName;
-	
+
 	@Column(name = "middle_name", nullable = false)
 	private String middleName;
-	
-	@Column(name = "email",unique = true, nullable = false)
+
+	@Column(name = "email", unique = true, nullable = false)
 	private String email;
-	
-	//!!! to dalate postcode int(11) NOT NULL,
-	
+
+	// !!! to dalate postcode int(11) NOT NULL,
+
 	@Column(name = "status", nullable = false)
-	@Enumerated(EnumType.STRING) 
+	@Enumerated(EnumType.STRING)
 	private UserStatus status;
-	
+
 	public User() {
-		
+
 	}
 
 	public Integer getUserId() {
@@ -114,7 +115,9 @@ public class User {
 	public void setStatus(UserStatus status) {
 		this.status = status;
 	}
-	
+
 }
 
-enum UserStatus {BLOCK, UNBLOCK};
+enum UserStatus {
+	BLOCK, UNBLOCK
+};
