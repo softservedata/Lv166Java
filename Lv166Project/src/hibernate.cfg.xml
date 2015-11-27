@@ -13,7 +13,7 @@
 
    <!-- Assume students is the database name -->
    <property name="hibernate.connection.url">
-      jdbc:mysql://localhost/softserve_project
+      jdbc:mysql://localhost/registrator_db
    </property>
    <property name="hibernate.connection.username">root</property>
    <property name="hibernate.connection.password">root</property>
@@ -22,21 +22,21 @@
    <property name="hbm2ddl.auto">update</property>
    
    	<!-- mapping files -->
-	<mapping class="com.softserve.edu.core.dto.User"/>
-	<mapping class="com.softserve.edu.core.dto.Role"/> 
-	<mapping class="com.softserve.edu.core.dto.Address"/> 
-	<mapping class="com.softserve.edu.core.dto.PassportInfo"/> 
-	<mapping class="com.softserve.edu.core.dto.ResourceType"/>
-	<mapping class="com.softserve.edu.core.dto.Resource"/> 
-	<mapping class="com.softserve.edu.core.dto.DiscreteValue"/>
-	<mapping class="com.softserve.edu.core.dto.LineSize"/>
-	<mapping class="com.softserve.edu.core.dto.ResourceParameters"/>
-	<mapping class="com.softserve.edu.core.dto.Area"/>
-	<mapping class="com.softserve.edu.core.dto.StoreOfLineSizes"/>
-	<mapping class="com.softserve.edu.core.dto.StoreOfDiscreteValues"/>
-	<mapping class="com.softserve.edu.core.dto.Owner"/>
-	<mapping class="com.softserve.edu.core.dto.Tome"/>
-	<mapping class="com.softserve.edu.core.dto.Inquiry"/>
+	<mapping class="com.softserve.edu.registrator.entity.User"/>
+	<mapping class="com.softserve.edu.registrator.entity.Role"/> 
+	<mapping class="com.softserve.edu.registrator.entity.Address"/> 
+	<mapping class="com.softserve.edu.registrator.entity.PassportInfo"/> 
+	<mapping class="com.softserve.edu.registrator.entity.ResourceType"/>
+	<mapping class="com.softserve.edu.registrator.entity.Resource"/> 
+	<mapping class="com.softserve.edu.registrator.entity.DiscreteValue"/>
+	<mapping class="com.softserve.edu.registrator.entity.LineSize"/>
+	<mapping class="com.softserve.edu.registrator.entity.ResourceParameters"/>
+	<mapping class="com.softserve.edu.registrator.entity.Area"/>
+	<mapping class="com.softserve.edu.registrator.entity.StoreOfLineSizes"/>
+	<mapping class="com.softserve.edu.registrator.entity.StoreOfDiscreteValues"/>
+
+	<mapping class="com.softserve.edu.registrator.entity.Tome"/>
+	<mapping class="com.softserve.edu.registrator.entity.Inquiry"/>
 		
 </session-factory>
 </hibernate-configuration>
